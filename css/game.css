@@ -1,0 +1,10 @@
+.container-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.container-btn button {
+    padding: 40px;
+}

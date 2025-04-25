@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.header-logo {
+    font-size: 2rem;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-links a {
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #c9e2ed;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+  }
+
+.header-links a:hover::after {
+    width: 100%;
+}
