@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./index.css";
 @import "./game.css";
+@import "./rules.css";
 
 * {
   margin: 0;
@@ -12,16 +13,19 @@
   list-style: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: linear-gradient(-45deg, #667eea, #764ba2, #ca9ce3, #b56acc);
-  height: 100vh;
+  min-height: 100vh;
   animation: gradientBG 30s ease infinite;
   background-size: 400% 400%;
   font-family: 'Poppins', serif;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  justify-content: center;
+  grid-template-rows: auto 1fr auto;
 }
 
 .container h1 {
@@ -68,4 +72,10 @@ body {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 3rem;
   }
+}

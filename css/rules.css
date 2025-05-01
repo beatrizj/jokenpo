@@ -1,0 +1,8 @@
+.rules {
+    color: #FFF;
+}
+
+.rules ul span,
+.rules p span {
+    font-weight: bold;
+}

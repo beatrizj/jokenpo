@@ -1,10 +1,11 @@
 .container {
     margin: 0 auto;
-  max-width: 1200px;
-  box-sizing: border-box;
-  padding-left: 60px;
-  padding-right: 60px;
-  display: flex;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    
 }
 
 .content {

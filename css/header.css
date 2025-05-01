@@ -36,3 +36,18 @@
 .header-links a:hover::after {
     width: 100%;
 }
+
+@media (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+    }
+
+    .header-links a {
+        display: block;
+        padding: 10px 15px;
+        border-radius: 4px;
+        background: #ba8fe4;
+    }
+}
